@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kuliner Nusantara — Review Kuliner</title>
+<link rel="stylesheet" href="CSS/index.css">
+<link rel="stylesheet" href="CSS/from.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Daftar Makanan</a>
+    <a href="from.html" aria-current="page">Review Kuliner</a>
+  </nav>
+
+  <header>
+    <div class="eyebrow">Formulir Pendapat &amp; Penilaian</div>
+    <h1>Review Kuliner</h1>
+    <p>Bagikan pengalaman mencicipi hidangan nusantara favorit Anda</p>
+  </header>
+
+  <main>
+    <form id="form" novalidate>
+      <label for="nama">Nama Makanan</label>
+      <input type="text" id="nama" placeholder="contoh: Rendang Padang" aria-describedby="nama-error">
+      <small class="error" id="nama-error" aria-live="polite"></small>
+
+      <label for="harga">Kisaran Harga (Rp)</label>
+      <input type="number" id="harga" placeholder="contoh: 35000" aria-describedby="harga-error">
+      <small class="error" id="harga-error" aria-live="polite"></small>
+
+      <label for="template">Kesan / Penilaian</label>
+      <select id="template">
+        <option value="sangat-enak">Sangat Enak &amp; Autentik</option>
+        <option value="bumbu-khas">Bumbu Rempahnya Berasa Banget</option>
+        <option value="pedas-mantap">Pedas &amp; Bikin Ketagihan</option>
+      </select>
+
+      <button type="submit">Buat Review</button>
+
+      <label for="caption">Hasil Review</label>
+      <textarea id="caption" rows="14" readonly></textarea>
+    </form>
+  </main>
+
+  <footer>
+    kuliner nusantara &middot; dibuat dengan HTML &amp; JS native
+  </footer>
+
+<script src="js/from.js"></script>
+</body>
+</html>
